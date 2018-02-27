@@ -3,14 +3,14 @@ package com.java.expert;
 import java.util.ArrayList;
 
 public class FactsBase {
-    protected ArrayList<IFact> facts;
+    private ArrayList<IFact> facts;
 
     public ArrayList<IFact> getFacts() {
         return facts;
     }
 
-    public FactsBase() {
-        this.facts = new ArrayList<IFact>();
+    FactsBase() {
+        this.facts = new ArrayList<>();
     }
 
     public void clear(){

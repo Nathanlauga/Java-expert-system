@@ -1,0 +1,802 @@
+rule,premise,classfication,conclusion
+R2122,,Seed,Bulbasaur
+R2123,,Seed,Ivysaur
+R2124,,Seed,Venusaur
+R2125,,Lizard,Charmander
+R2126,,Flame,Charmeleon
+R2127,,Flame,Charizard
+R2128,,Tiny Turtle,Squirtle
+R2129,,Turtle,Wartortle
+R2130,,Shellfish,Blastoise
+R2131,,Worm,Caterpie
+R2132,,Cocoon,Metapod
+R2133,,Butterfly,Butterfree
+R2134,,Hairy,Weedle
+R2135,,Cocoon,Kakuna
+R2136,,Poison Bee,Beedrill
+R2137,,Tiny Bird,Pidgey
+R2138,,Bird,Pidgeotto
+R2139,,Bird,Pidgeot
+R2140,,Mouse,Rattata
+R2141,,Mouse,Raticate
+R2142,,Tiny Bird,Spearow
+R2143,,Beak,Fearow
+R2144,,Snake,Ekans
+R2145,,Cobra,Arbok
+R2146,,Mouse,Pikachu
+R2147,,Mouse,Raichu
+R2148,,Mouse,Sandshrew
+R2149,,Mouse,Sandslash
+R2150,,Poison Pin,Nidoran♀
+R2151,,Poison Pin,Nidorina
+R2152,,Drill,Nidoqueen
+R2153,,Poison Pin,Nidoran♂
+R2154,,Poison Pin,Nidorino
+R2155,,Drill,Nidoking
+R2156,,Fairy,Clefairy
+R2157,,Fairy,Clefable
+R2158,,Fox,Vulpix
+R2159,,Fox,Ninetales
+R2160,,Balloon,Jigglypuff
+R2161,,Balloon,Wigglytuff
+R2162,,Bat,Zubat
+R2163,,Bat,Golbat
+R2164,,Weed,Oddish
+R2165,,Weed,Gloom
+R2166,,Flower,Vileplume
+R2167,,Mushroom,Paras
+R2168,,Mushroom,Parasect
+R2169,,Insect,Venonat
+R2170,,Poison Moth,Venomoth
+R2171,,Mole,Diglett
+R2172,,Mole,Dugtrio
+R2173,,Scratch Cat,Meowth
+R2174,,Classy Cat,Persian
+R2175,,Duck,Psyduck
+R2176,,Duck,Golduck
+R2177,,Pig Monkey,Mankey
+R2178,,Pig Monkey,Primeape
+R2179,,Puppy,Growlithe
+R2180,,Legendary,Arcanine
+R2181,,Tadpole,Poliwag
+R2182,,Tadpole,Poliwhirl
+R2183,,Tadpole,Poliwrath
+R2184,,Psi,Abra
+R2185,,Psi,Kadabra
+R2186,,Psi,Alakazam
+R2187,,Superpower,Machop
+R2188,,Superpower,Machoke
+R2189,,Superpower,Machamp
+R2190,,Flower,Bellsprout
+R2191,,Flycatcher,Weepinbell
+R2192,,Flycatcher,Victreebel
+R2193,,Jellyfish,Tentacool
+R2194,,Jellyfish,Tentacruel
+R2195,,Rock,Geodude
+R2196,,Rock,Graveler
+R2197,,Megaton,Golem
+R2198,,Fire Horse,Ponyta
+R2199,,Fire Horse,Rapidash
+R2200,,Dopey,Slowpoke
+R2201,,Hermit Crab,Slowbro
+R2202,,Magnet,Magnemite
+R2203,,Magnet,Magneton
+R2204,,Wild Duck,Farfetch'd
+R2205,,Twin Bird,Doduo
+R2206,,Triple Bird,Dodrio
+R2207,,Sea Lion,Seel
+R2208,,Sea Lion,Dewgong
+R2209,,Sludge,Grimer
+R2210,,Sludge,Muk
+R2211,,Bivalve,Shellder
+R2212,,Bivalve,Cloyster
+R2213,,Gas,Gastly
+R2214,,Gas,Haunter
+R2215,,Shadow,Gengar
+R2216,,Rock Snake,Onix
+R2217,,Hypnosis,Drowzee
+R2218,,Hypnosis,Hypno
+R2219,,River Crab,Krabby
+R2220,,Pincer,Kingler
+R2221,,Ball,Voltorb
+R2222,,Ball,Electrode
+R2223,,Egg,Exeggcute
+R2224,,Coconut,Exeggutor
+R2225,,Lonely,Cubone
+R2226,,Bone Keeper,Marowak
+R2227,,Kicking,Hitmonlee
+R2228,,Punching,Hitmonchan
+R2229,,Licking,Lickitung
+R2230,,Poison Gas,Koffing
+R2231,,Poison Gas,Weezing
+R2232,,Spikes,Rhyhorn
+R2233,,Drill,Rhydon
+R2234,,Egg,Chansey
+R2235,,Vine,Tangela
+R2236,,Parent,Kangaskhan
+R2237,,Dragon,Horsea
+R2238,,Dragon,Seadra
+R2239,,Goldfish,Goldeen
+R2240,,Goldfish,Seaking
+R2241,,Starshape,Staryu
+R2242,,Mysterious,Starmie
+R2243,,Barrier,Mr. Mime
+R2244,,Mantis,Scyther
+R2245,,Humanshape,Jynx
+R2246,,Electric,Electabuzz
+R2247,,Spitfire,Magmar
+R2248,,Stagbeetle,Pinsir
+R2249,,Wild Bull,Tauros
+R2250,,Fish,Magikarp
+R2251,,Atrocious,Gyarados
+R2252,,Transport,Lapras
+R2253,,Transform,Ditto
+R2254,,Evolution,Eevee
+R2255,,Bubble Jet,Vaporeon
+R2256,,Lightning,Jolteon
+R2257,,Flame,Flareon
+R2258,,Virtual,Porygon
+R2259,,Spiral,Omanyte
+R2260,,Spiral,Omastar
+R2261,,Shellfish,Kabuto
+R2262,,Shellfish,Kabutops
+R2263,,Fossil,Aerodactyl
+R2264,,Sleeping,Snorlax
+R2265,,Freeze,Articuno
+R2266,,Electric,Zapdos
+R2267,,Flame,Moltres
+R2268,,Dragon,Dratini
+R2269,,Dragon,Dragonair
+R2270,,Dragon,Dragonite
+R2271,,Genetic,Mewtwo
+R2272,,New Species,Mew
+R2273,,Leaf,Chikorita
+R2274,,Leaf,Bayleef
+R2275,,Herb,Meganium
+R2276,,Fire Mouse,Cyndaquil
+R2277,,Volcano,Quilava
+R2278,,Volcano,Typhlosion
+R2279,,Big Jaw,Totodile
+R2280,,Big Jaw,Croconaw
+R2281,,Big Jaw,Feraligatr
+R2282,,Scout,Sentret
+R2283,,Long Body,Furret
+R2284,,Owl,Hoothoot
+R2285,,Owl,Noctowl
+R2286,,Five Star,Ledyba
+R2287,,Five Star,Ledian
+R2288,,String Spit,Spinarak
+R2289,,Long Leg,Ariados
+R2290,,Bat,Crobat
+R2291,,Angler,Chinchou
+R2292,,Light,Lanturn
+R2293,,Tiny Mouse,Pichu
+R2294,,Star Shape,Cleffa
+R2295,,Balloon,Igglybuff
+R2296,,Spike Ball,Togepi
+R2297,,Happiness,Togetic
+R2298,,Little Bird,Natu
+R2299,,Mystic,Xatu
+R2300,,Wool,Mareep
+R2301,,Wool,Flaaffy
+R2302,,Light,Ampharos
+R2303,,Flower,Bellossom
+R2304,,Aquamouse,Marill
+R2305,,Aquarabbit,Azumarill
+R2306,,Imitation,Sudowoodo
+R2307,,Frog,Politoed
+R2308,,Cottonweed,Hoppip
+R2309,,Cottonweed,Skiploom
+R2310,,Cottonweed,Jumpluff
+R2311,,Long Tail,Aipom
+R2312,,Seed,Sunkern
+R2313,,Sun,Sunflora
+R2314,,Clear Wing,Yanma
+R2315,,Water Fish,Wooper
+R2316,,Water Fish,Quagsire
+R2317,,Sun,Espeon
+R2318,,Moonlight,Umbreon
+R2319,,Darkness,Murkrow
+R2320,,Royal,Slowking
+R2321,,Screech,Misdreavus
+R2322,,Symbol,Unown
+R2323,,Patient,Wobbuffet
+R2324,,Long Neck,Girafarig
+R2325,,Bagworm,Pineco
+R2326,,Bagworm,Forretress
+R2327,,Land Snake,Dunsparce
+R2328,,Flyscorpion,Gligar
+R2329,,Iron Snake,Steelix
+R2330,,Fairy,Snubbull
+R2331,,Fairy,Granbull
+R2332,,Balloon,Qwilfish
+R2333,,Pincer,Scizor
+R2334,,Mold,Shuckle
+R2335,,Singlehorn,Heracross
+R2336,,Sharp Claw,Sneasel
+R2337,,Little Bear,Teddiursa
+R2338,,Hibernator,Ursaring
+R2339,,Lava,Slugma
+R2340,,Lava,Magcargo
+R2341,,Pig,Swinub
+R2342,,Swine,Piloswine
+R2343,,Coral,Corsola
+R2344,,Jet,Remoraid
+R2345,,Jet,Octillery
+R2346,,Delivery,Delibird
+R2347,,Kite,Mantine
+R2348,,Armor Bird,Skarmory
+R2349,,Dark,Houndour
+R2350,,Dark,Houndoom
+R2351,,Dragon,Kingdra
+R2352,,Long Nose,Phanpy
+R2353,,Armor,Donphan
+R2354,,Virtual,Porygon2
+R2355,,Big Horn,Stantler
+R2356,,Painter,Smeargle
+R2357,,Scuffle,Tyrogue
+R2358,,Handstand,Hitmontop
+R2359,,Kiss,Smoochum
+R2360,,Electric,Elekid
+R2361,,Live Coal,Magby
+R2362,,Milk Cow,Miltank
+R2363,,Happiness,Blissey
+R2364,,Thunder,Raikou
+R2365,,Volcano,Entei
+R2366,,Aurora,Suicune
+R2367,,Rock Skin,Larvitar
+R2368,,Hard Shell,Pupitar
+R2369,,Armor,Tyranitar
+R2370,,Diving,Lugia
+R2371,,Rainbow,Ho-Oh
+R2372,,Time Travel,Celebi
+R2373,,Wood Gecko,Treecko
+R2374,,Wood Gecko,Grovyle
+R2375,,Forest,Sceptile
+R2376,,Chick,Torchic
+R2377,,Young Fowl,Combusken
+R2378,,Blaze,Blaziken
+R2379,,Mud Fish,Mudkip
+R2380,,Mud Fish,Marshtomp
+R2381,,Mud Fish,Swampert
+R2382,,Bite,Poochyena
+R2383,,Bite,Mightyena
+R2384,,Tiny Racoon,Zigzagoon
+R2385,,Rush,Linoone
+R2386,,Worm,Wurmple
+R2387,,Cocoon,Silcoon
+R2388,,Butterfly,Beautifly
+R2389,,Cocoon,Cascoon
+R2390,,Poison Moth,Dustox
+R2391,,Water Weed,Lotad
+R2392,,Jolly,Lombre
+R2393,,Carefree,Ludicolo
+R2394,,Acorn,Seedot
+R2395,,Wily,Nuzleaf
+R2396,,Wickid,Shiftry
+R2397,,TinySwallow,Taillow
+R2398,,Swallow,Swellow
+R2399,,Seagull,Wingull
+R2400,,Water Bird,Pelipper
+R2401,,Feeling,Ralts
+R2402,,Emotion,Kirlia
+R2403,,Embrace,Gardevoir
+R2404,,Pond Skater,Surskit
+R2405,,Eyeball,Masquerain
+R2406,,Mushroom,Shroomish
+R2407,,Mushroom,Breloom
+R2408,,Slacker,Slakoth
+R2409,,Wild Monkey,Vigoroth
+R2410,,Lazy,Slaking
+R2411,,Trainee,Nincada
+R2412,,Ninja,Ninjask
+R2413,,Shed,Shedinja
+R2414,,Whisper,Whismur
+R2415,,Big Voice,Loudred
+R2416,,Loud Noise,Exploud
+R2417,,Guts,Makuhita
+R2418,,Arm Thrust,Hariyama
+R2419,,Polka Dot,Azurill
+R2420,,Compass,Nosepass
+R2421,,Kitten,Skitty
+R2422,,Prim,Delcatty
+R2423,,Darkness,Sableye
+R2424,,Deceiver,Mawile
+R2425,,Iron Armor,Aron
+R2426,,Iron Armor,Lairon
+R2427,,Iron Armor,Aggron
+R2428,,Meditate,Meditite
+R2429,,Meditate,Medicham
+R2430,,Lightning,Electrike
+R2431,,Discharge,Manectric
+R2432,,Cheering,Plusle
+R2433,,Cheering,Minun
+R2434,,Firefly,Volbeat
+R2435,,Firefly,Illumise
+R2436,,Thorn,Roselia
+R2437,,Stomach,Gulpin
+R2438,,Poison Bag,Swalot
+R2439,,Savage,Carvanha
+R2440,,Brutal,Sharpedo
+R2441,,Ball Whale,Wailmer
+R2442,,Float Whale,Wailord
+R2443,,Numb,Numel
+R2444,,Eruption,Camerupt
+R2445,,Coal,Torkoal
+R2446,,Bounce,Spoink
+R2447,,Manipulate,Grumpig
+R2448,,Spot Panda,Spinda
+R2449,,Ant Pit,Trapinch
+R2450,,Vibration,Vibrava
+R2451,,Mystic,Flygon
+R2452,,Cactus,Cacnea
+R2453,,Scarecrow,Cacturne
+R2454,,Cotton Bird,Swablu
+R2455,,Humming,Altaria
+R2456,,Cat Ferret,Zangoose
+R2457,,Fang Snake,Seviper
+R2458,,Meteorite,Lunatone
+R2459,,Meteorite,Solrock
+R2460,,Whiskers,Barboach
+R2461,,Whiskers,Whiscash
+R2462,,Ruffian,Corphish
+R2463,,Rogue,Crawdaunt
+R2464,,Clay Doll,Baltoy
+R2465,,Clay Doll,Claydol
+R2466,,Sea Lily,Lileep
+R2467,,Barnacle,Cradily
+R2468,,Old Shrimp,Anorith
+R2469,,Plate,Armaldo
+R2470,,Fish,Feebas
+R2471,,Tender,Milotic
+R2472,,Weather,Castform
+R2473,,Color Swap,Kecleon
+R2474,,Puppet,Shuppet
+R2475,,Marionette,Banette
+R2476,,Requiem,Duskull
+R2477,,Beckon,Dusclops
+R2478,,Fruit,Tropius
+R2479,,Wind Chime,Chimecho
+R2480,,Disaster,Absol
+R2481,,Bright,Wynaut
+R2482,,Snow Hat,Snorunt
+R2483,,Face,Glalie
+R2484,,Clap,Spheal
+R2485,,Ball Roll,Sealeo
+R2486,,Ice Break,Walrein
+R2487,,Bivalve,Clamperl
+R2488,,Deep Sea,Huntail
+R2489,,South Sea,Gorebyss
+R2490,,Longevity,Relicanth
+R2491,,Rendezvous,Luvdisc
+R2492,,Rock Head,Bagon
+R2493,,Endurance,Shelgon
+R2494,,Dragon,Salamence
+R2495,,Iron Ball,Beldum
+R2496,,Iron Claw,Metang
+R2497,,Iron Leg,Metagross
+R2498,,Rock Peak,Regirock
+R2499,,Iceberg,Regice
+R2500,,Iron,Registeel
+R2501,,Eon,Latias
+R2502,,Eon,Latios
+R2503,,Sea Basin,Kyogre
+R2504,,Continent,Groudon
+R2505,,Sky High,Rayquaza
+R2506,,Wish,Jirachi
+R2507,,DNA,Deoxys
+R2508,,Tiny Leaf,Turtwig
+R2509,,Grove,Grotle
+R2510,,Continent,Torterra
+R2511,,Chimp,Chimchar
+R2512,,Playful,Monferno
+R2513,,Flame,Infernape
+R2514,,Penguin,Piplup
+R2515,,Penguin,Prinplup
+R2516,,Emperor,Empoleon
+R2517,,Starling,Starly
+R2518,,Starling,Staravia
+R2519,,Predator,Staraptor
+R2520,,Plump Mouse,Bidoof
+R2521,,Beaver,Bibarel
+R2522,,Cricket,Kricketot
+R2523,,Cricket,Kricketune
+R2524,,Flash,Shinx
+R2525,,Spark,Luxio
+R2526,,Gleam Eyes,Luxray
+R2527,,Bud,Budew
+R2528,,Bouquet,Roserade
+R2529,,Head Butt,Cranidos
+R2530,,Head Butt,Rampardos
+R2531,,Shield,Shieldon
+R2532,,Shield,Bastiodon
+R2533,,Bagworm,Burmy
+R2534,,Bagworm,Wormadam
+R2535,,Moth,Mothim
+R2536,,Tiny Bee,Combee
+R2537,,Beehive,Vespiquen
+R2538,,EleSquirrel,Pachirisu
+R2539,,Sea Weasel,Buizel
+R2540,,Sea Weasel,Floatzel
+R2541,,Cherry,Cherubi
+R2542,,Blossom,Cherrim
+R2543,,Sea Slug,Shellos
+R2544,,Sea Slug,Gastrodon
+R2545,,Long Tail,Ambipom
+R2546,,Balloon,Drifloon
+R2547,,Blimp,Drifblim
+R2548,,Rabbit,Buneary
+R2549,,Rabbit,Lopunny
+R2550,,Magical,Mismagius
+R2551,,Big Boss,Honchkrow
+R2552,,Catty,Glameow
+R2553,,Tiger Cat,Purugly
+R2554,,Bell,Chingling
+R2555,,Skunk,Stunky
+R2556,,Skunk,Skuntank
+R2557,,Bronze,Bronzor
+R2558,,Bronze Bell,Bronzong
+R2559,,Bonsai,Bonsly
+R2560,,Mime,Mime Jr.
+R2561,,Playhouse,Happiny
+R2562,,Music Note,Chatot
+R2563,,Forbidden,Spiritomb
+R2564,,Land Shark,Gible
+R2565,,Cave,Gabite
+R2566,,Mach,Garchomp
+R2567,,Big Eater,Munchlax
+R2568,,Emanation,Riolu
+R2569,,Aura,Lucario
+R2570,,Hippo,Hippopotas
+R2571,,Heavyweight,Hippowdon
+R2572,,Scorpion,Skorupi
+R2573,,Ogre Scorp,Drapion
+R2574,,Toxic Mouth,Croagunk
+R2575,,Toxic Mouth,Toxicroak
+R2576,,Bug Catcher,Carnivine
+R2577,,Wing Fish,Finneon
+R2578,,Neon,Lumineon
+R2579,,Kite,Mantyke
+R2580,,Frosted Tree,Snover
+R2581,,Frosted Tree,Abomasnow
+R2582,,Sharp Claw,Weavile
+R2583,,Magnet Area,Magnezone
+R2584,,Licking,Lickilicky
+R2585,,Drill,Rhyperior
+R2586,,Vine,Tangrowth
+R2587,,Thunderbolt,Electivire
+R2588,,Blast,Magmortar
+R2589,,Jubilee,Togekiss
+R2590,,Ogre Darner,Yanmega
+R2591,,Verdant,Leafeon
+R2592,,Fresh Snow,Glaceon
+R2593,,Fang Scorp,Gliscor
+R2594,,Twin Tusk,Mamoswine
+R2595,,Virtual,Porygon-Z
+R2596,,Blade,Gallade
+R2597,,Compass,Probopass
+R2598,,Gripper,Dusknoir
+R2599,,Snow Land,Froslass
+R2600,,Plasma,Rotom
+R2601,,Knowledge,Uxie
+R2602,,Emotion,Mesprit
+R2603,,Willpower,Azelf
+R2604,,Temporal,Dialga
+R2605,,Spatial,Palkia
+R2606,,Lava Dome,Heatran
+R2607,,Colossal,Regigigas
+R2608,,Renegade,Giratina
+R2609,,Lunar,Cresselia
+R2610,,Sea Drifter,Phione
+R2611,,Seafaring,Manaphy
+R2612,,Pitch-Black,Darkrai
+R2613,,Gratitude,Shaymin
+R2614,,Alpha,Arceus
+R2615,,Victory,Victini
+R2616,,Grass Snake,Snivy
+R2617,,Grass Snake,Servine
+R2618,,Regal,Serperior
+R2619,,Fire Pig,Tepig
+R2620,,Fire Pig,Pignite
+R2621,,Mega Fire Pig,Emboar
+R2622,,Sea Otter,Oshawott
+R2623,,Discipline,Dewott
+R2624,,Formidable,Samurott
+R2625,,Scout,Patrat
+R2626,,Lookout,Watchog
+R2627,,Puppy,Lillipup
+R2628,,Loyal Dog,Herdier
+R2629,,Big-Hearted,Stoutland
+R2630,,Devious,Purrloin
+R2631,,Cruel,Liepard
+R2632,,Grass Monkey,Pansage
+R2633,,Thorn Monkey,Simisage
+R2634,,High Temp,Pansear
+R2635,,Ember,Simisear
+R2636,,Spray,Panpour
+R2637,,Geyser,Simipour
+R2638,,Dream Eater,Munna
+R2639,,Drowsing,Musharna
+R2640,,Tiny Pigeon,Pidove
+R2641,,Wild Pigeon,Tranquill
+R2642,,Proud,Unfezant
+R2643,,Electrified,Blitzle
+R2644,,Thunderbolt,Zebstrika
+R2645,,Mantle,Roggenrola
+R2646,,Ore,Boldore
+R2647,,Compressed,Gigalith
+R2648,,Bat,Woobat
+R2649,,Courting,Swoobat
+R2650,,Mole,Drilbur
+R2651,,Subterrene,Excadrill
+R2652,,Hearing,Audino
+R2653,,Muscular,Timburr
+R2654,,Muscular,Gurdurr
+R2655,,Muscular,Conkeldurr
+R2656,,Tadpole,Tympole
+R2657,,Vibration,Palpitoad
+R2658,,Vibration,Seismitoad
+R2659,,Judo,Throh
+R2660,,Karate,Sawk
+R2661,,Sewing,Sewaddle
+R2662,,Leaf-Wrapped,Swadloon
+R2663,,Nurturing,Leavanny
+R2664,,Centipede,Venipede
+R2665,,Curlipede,Whirlipede
+R2666,,Megapede,Scolipede
+R2667,,Cotton Puff,Cottonee
+R2668,,Windveiled,Whimsicott
+R2669,,Bulb,Petilil
+R2670,,Flowering,Lilligant
+R2671,,Hostile,Basculin
+R2672,,Desert Croc,Sandile
+R2673,,Desert Croc,Krokorok
+R2674,,Intimidation,Krookodile
+R2675,,Zen Charm,Darumaka
+R2676,,Blazing,Darmanitan
+R2677,,Cactus,Maractus
+R2678,,Rock Inn,Dwebble
+R2679,,Stone Home,Crustle
+R2680,,Shedding,Scraggy
+R2681,,Hoodlum,Scrafty
+R2682,,Avianoid,Sigilyph
+R2683,,Spirit,Yamask
+R2684,,Coffin,Cofagrigus
+R2685,,Prototurtle,Tirtouga
+R2686,,Prototurtle,Carracosta
+R2687,,First Bird,Archen
+R2688,,First Bird,Archeops
+R2689,,Trash Bag,Trubbish
+R2690,,Trash Heap,Garbodor
+R2691,,Tricky Fox,Zorua
+R2692,,Illusion Fox,Zoroark
+R2693,,Chinchilla,Minccino
+R2694,,Scarf,Cinccino
+R2695,,Fixation,Gothita
+R2696,,Manipulate,Gothorita
+R2697,,Astral Body,Gothitelle
+R2698,,Cell,Solosis
+R2699,,Mitosis,Duosion
+R2700,,Multiplying,Reuniclus
+R2701,,Water Bird,Ducklett
+R2702,,White Bird,Swanna
+R2703,,Fresh Snow,Vanillite
+R2704,,Icy Snow,Vanillish
+R2705,,Snowstorm,Vanilluxe
+R2706,,Season,Deerling
+R2707,,Season,Sawsbuck
+R2708,,Sky Squirrel,Emolga
+R2709,,Clamping,Karrablast
+R2710,,Cavalry,Escavalier
+R2711,,Mushroom,Foongus
+R2712,,Mushroom,Amoonguss
+R2713,,Floating,Frillish
+R2714,,Floating,Jellicent
+R2715,,Caring,Alomomola
+R2716,,Attaching,Joltik
+R2717,,EleSpider,Galvantula
+R2718,,Thorn Seed,Ferroseed
+R2719,,Thorn Pod,Ferrothorn
+R2720,,Gear,Klink
+R2721,,Gear,Klang
+R2722,,Gear,Klinklang
+R2723,,EleFish,Tynamo
+R2724,,EleFish,Eelektrik
+R2725,,EleFish,Eelektross
+R2726,,Cerebral,Elgyem
+R2727,,Cerebral,Beheeyem
+R2728,,Candle,Litwick
+R2729,,Lamp,Lampent
+R2730,,Luring,Chandelure
+R2731,,Tusk,Axew
+R2732,,Axe Jaw,Fraxure
+R2733,,Axe Jaw,Haxorus
+R2734,,Chill,Cubchoo
+R2735,,Freezing,Beartic
+R2736,,Crystallizing,Cryogonal
+R2737,,Snail,Shelmet
+R2738,,Shell Out,Accelgor
+R2739,,Trap,Stunfisk
+R2740,,Martial Arts,Mienfoo
+R2741,,Martial Arts,Mienshao
+R2742,,Cave,Druddigon
+R2743,,Automaton,Golett
+R2744,,Automaton,Golurk
+R2745,,Sharp Blade,Pawniard
+R2746,,Sword Blade,Bisharp
+R2747,,Bash Buffalo,Bouffalant
+R2748,,Eaglet,Rufflet
+R2749,,Valiant,Braviary
+R2750,,Diapered,Vullaby
+R2751,,Bone Vulture,Mandibuzz
+R2752,,Anteater,Heatmor
+R2753,,Iron Ant,Durant
+R2754,,Irate,Deino
+R2755,,Hostile,Zweilous
+R2756,,Brutal,Hydreigon
+R2757,,Torch,Larvesta
+R2758,,Sun,Volcarona
+R2759,,Iron Will,Cobalion
+R2760,,Cavern,Terrakion
+R2761,,Grassland,Virizion
+R2762,,Cyclone,Tornadus
+R2763,,Bolt Strike,Thundurus
+R2764,,Vast White,Reshiram
+R2765,,Deep Black,Zekrom
+R2766,,Abundance,Landorus
+R2767,,Boundary,Kyurem
+R2768,,Colt,Keldeo
+R2769,,Melody,Meloetta
+R2770,,Paleozoic,Genesect
+R2771,,Spiky Nut,Chespin
+R2772,,Spiny Armor,Quilladin
+R2773,,Spiny Armor,Chesnaught
+R2774,,Fox,Fennekin
+R2775,,Fox,Braixen
+R2776,,Fox,Delphox
+R2777,,Bubble Frog,Froakie
+R2778,,Bubble Frog,Frogadier
+R2779,,Ninja,Greninja
+R2780,,Digging,Bunnelby
+R2781,,Digging,Diggersby
+R2782,,Tiny Robin,Fletchling
+R2783,,Ember,Fletchinder
+R2784,,Scorching,Talonflame
+R2785,,Scatterdust,Scatterbug
+R2786,,Scatterdust,Spewpa
+R2787,,Scale,Vivillon
+R2788,,Lion Cub,Litleo
+R2789,,Royal,Pyroar
+R2790,,Single Bloom,Flabébé
+R2791,,Fairy,Floette
+R2792,,Garden,Florges
+R2793,,Mount,Skiddo
+R2794,,Mount,Gogoat
+R2795,,Playful,Pancham
+R2796,,Daunting,Pangoro
+R2797,,Poodle,Furfrou
+R2798,,Restraint,Espurr
+R2799,,Constraint,Meowstic
+R2800,,Sword,Honedge
+R2801,,Sword,Doublade
+R2802,,Royal Sword,Aegislash
+R2803,,Perfume,Spritzee
+R2804,,Fragrance,Aromatisse
+R2805,,Cotton Candy,Swirlix
+R2806,,Meringue,Slurpuff
+R2807,,Revolving,Inkay
+R2808,,Overturning,Malamar
+R2809,,Two-Handed,Binacle
+R2810,,Collective,Barbaracle
+R2811,,Mock Kelp,Skrelp
+R2812,,Mock Kelp,Dragalge
+R2813,,Water Gun,Clauncher
+R2814,,Howitzer,Clawitzer
+R2815,,Generator,Helioptile
+R2816,,Generator,Heliolisk
+R2817,,Royal Heir,Tyrunt
+R2818,,Despot,Tyrantrum
+R2819,,Tundra,Amaura
+R2820,,Tundra,Aurorus
+R2821,,Intertwining,Sylveon
+R2822,,Wrestling,Hawlucha
+R2823,,Antenna,Dedenne
+R2824,,Jewel,Carbink
+R2825,,Soft Tissue,Goomy
+R2826,,Soft Tissue,Sliggoo
+R2827,,Dragon,Goodra
+R2828,,Key Ring,Klefki
+R2829,,Stump,Phantump
+R2830,,Elder Tree,Trevenant
+R2831,,Pumpkin,Pumpkaboo
+R2832,,Pumpkin,Gourgeist
+R2833,,Ice Chunk,Bergmite
+R2834,,Iceberg,Avalugg
+R2835,,Sound Wave,Noibat
+R2836,,Sound Wave,Noivern
+R2837,,Life,Xerneas
+R2838,,Destruction,Yveltal
+R2839,,Order,Zygarde
+R2840,,Jewel,Diancie
+R2841,,Mischief Pokémon (Confined)Djinn Pokémonn,Hoopa
+R2842,,Steam,Volcanion
+R2843,,Grass Quill,Rowlet
+R2844,,Blade Quill,Dartrix
+R2845,,Arrow Quill,Decidueye
+R2846,,Fire Cat,Litten
+R2847,,Fire Cat,Torracat
+R2848,,Heel,Incineroar
+R2849,,Sea Lion,Popplio
+R2850,,Pop Star,Brionne
+R2851,,Soloist,Primarina
+R2852,,Woodpecker,Pikipek
+R2853,,Bugle Beak,Trumbeak
+R2854,,Cannon,Toucannon
+R2855,,Loitering,Yungoos
+R2856,,Stakeout,Gumshoos
+R2857,,Larva,Grubbin
+R2858,,Battery,Charjabug
+R2859,,Stag Beetle,Vikavolt
+R2860,,Boxing,Crabrawler
+R2861,,Woolly Crab,Crabominable
+R2862,,Dancing,Oricorio
+R2863,,Bee Fly,Cutiefly
+R2864,,Bee Fly,Ribombee
+R2865,,Puppy,Rockruff
+R2866,,Wolf,Lycanroc
+R2867,,Small Fry,Wishiwashi
+R2868,,Brutal Star,Mareanie
+R2869,,Brutal Star,Toxapex
+R2870,,Donkey,Mudbray
+R2871,,Draft Horse,Mudsdale
+R2872,,Water Bubble,Dewpider
+R2873,,Water Bubble,Araquanid
+R2874,,Sickle Grass,Fomantis
+R2875,,Bloom Sickle,Lurantis
+R2876,,Illuminating,Morelull
+R2877,,Illuminating,Shiinotic
+R2878,,Toxic Lizard,Salandit
+R2879,,Toxic Lizard,Salazzle
+R2880,,Flailing,Stufful
+R2881,,Strong Arm,Bewear
+R2882,,Fruit,Bounsweet
+R2883,,Fruit,Steenee
+R2884,,Fruit,Tsareena
+R2885,,Posy Picker,Comfey
+R2886,,Sage,Oranguru
+R2887,,Teamwork,Passimian
+R2888,,Turn Tail,Wimpod
+R2889,,Hard Scale,Golisopod
+R2890,,Sand Heap,Sandygast
+R2891,,Sand Castle,Palossand
+R2892,,Sea Cucumber,Pyukumuku
+R2893,,Synthetic,Type: Null
+R2894,,Synthetic,Silvally
+R2895,,Meteor,Minior
+R2896,,Drowsing,Komala
+R2897,,Blast Turtle,Turtonator
+R2898,,Roly-Poly,Togedemaru
+R2899,,Disguise,Mimikyu
+R2900,,Gnash Teeth,Bruxish
+R2901,,Placid,Drampa
+R2902,,Sea Creeper,Dhelmise
+R2903,,Scaly,Jangmo-o
+R2904,,Scaly,Hakamo-o
+R2905,,Scaly,Kommo-o
+R2906,,Land Spirit,Tapu Koko
+R2907,,Land Spirit,Tapu Lele
+R2908,,Land Spirit,Tapu Bulu
+R2909,,Land Spirit,Tapu Fini
+R2910,,Nebula,Cosmog
+R2911,,Protostar,Cosmoem
+R2912,,Sunne,Solgaleo
+R2913,,Moone,Lunala
+R2914,,Parasite,Nihilego
+R2915,,Swollen,Buzzwole
+R2916,,Lissome,Pheromosa
+R2917,,Glowing,Xurkitree
+R2918,,Launch,Celesteela
+R2919,,Drawn Sword,Kartana
+R2920,,Junkivore,Guzzlord
+R2921,,Prism,Necrozma
+R2922,,Artificial,Magearna

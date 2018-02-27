@@ -5,12 +5,11 @@ import java.util.*;
 public class Main implements HumanInterface {
 
     public static void main(String[] args) {
-	// write your code here
         Main p = new Main();
         p.Run();
     }
 
-    public void Run(){
+    private void Run(){
         System.out.println("** Création du moteur **");
         Motor m = new Motor(this);
 
@@ -57,8 +56,7 @@ public class Main implements HumanInterface {
         Scanner sc = new Scanner(System.in);
         System.out.println(question + " (yes, no)");
         String str = sc.nextLine();
-        if (str.equals("yes")) return true;
-        else return false;
+        return str.equals("yes");
     }
 
     @Override
