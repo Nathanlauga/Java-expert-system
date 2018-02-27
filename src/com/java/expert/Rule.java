@@ -1,6 +1,7 @@
-package com.nathan.expert;
+package com.java.expert;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Rule {
     public ArrayList<IFact> Premises;
@@ -39,6 +40,6 @@ public class Rule {
 
     @Override
     public String toString() {
-        return Name + " : IF (" +String.join(" AND ", (CharSequence) Premises) + ") THEN "+ Conclusion.toString();
+        return Name + " : IF (" +String.join(" AND ", Arrays.asList(Premises) + ") THEN "+ Conclusion.toString());
     }
 }

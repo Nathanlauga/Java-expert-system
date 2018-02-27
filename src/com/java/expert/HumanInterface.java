@@ -1,7 +1,6 @@
-package com.nathan.expert;
+package com.java.expert;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public interface HumanInterface {
     int AskIntValue(String question);

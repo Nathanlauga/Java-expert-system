@@ -1,8 +1,8 @@
-package com.nathan.expert;
+package com.java.expert;
 
-public class IntFact implements IFact {
+public class BoolFact implements IFact {
     protected String name;
-    protected int value;
+    protected boolean value;
     protected int level;
     protected String question = null;
 
@@ -31,7 +31,7 @@ public class IntFact implements IFact {
         level = l;
     }
 
-    public IntFact(String _name, int _value, String _question, int _level){
+    public BoolFact(String _name, boolean _value, String _question, int _level){
         name = _name;
         value = _value;
         question = _question;
@@ -40,6 +40,11 @@ public class IntFact implements IFact {
 
     @Override
     public String toString() {
-        return name + "=" + value +" ("+ level+")";
+        String res = "";
+        if(!value){
+            res += "!";
+        }
+        res += name + " ("+level+")";
+        return res;
     }
 }

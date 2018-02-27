@@ -1,6 +1,4 @@
-package com.nathan.expert;
-
-import javafx.beans.binding.IntegerBinding;
+package com.java.expert;
 
 import java.util.ArrayList;
 import java.util.Arrays;

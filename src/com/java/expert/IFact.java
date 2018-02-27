@@ -1,4 +1,4 @@
-package com.nathan.expert;
+package com.java.expert;
 
 public interface IFact {
     String Name();
