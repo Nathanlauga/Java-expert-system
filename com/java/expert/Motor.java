@@ -25,10 +25,14 @@ public class Motor {
         return humanInterface.AskBoolValue(p);
     }
 
+    public String AskStringValue(String p) {
+        return humanInterface.AskStringValue(p);
+    }
+
     private int CanApply(Rule r){
         int maxlevel = -1;
 
-        for (IFact f:r.getPremises()) {
+        for (IFact f : r.getPremises()) {
             IFact foundFact = factsBase.search(f.Name());
             if (foundFact == null){
                 if (f.Question() != null){
@@ -36,9 +40,13 @@ public class Motor {
                     factsBase.AddFact(foundFact);
                     maxlevel = Math.max(maxlevel, 0);
                 }
-                else return -1;
+                else {
+                    return -1;
+                }
             }
-            if (!foundFact.Value().equals(f.Value()))return -1;
+            if (!foundFact.Value().equals(f.Value())) {
+                return -1;
+            }
             else {
                 maxlevel = Math.max(maxlevel, foundFact.Level());
             }

@@ -5,6 +5,7 @@ import java.util.*;
 public class Main implements HumanInterface {
 
     public static void main(String[] args) {
+
         Main p = new Main();
         p.Run();
     }
@@ -14,7 +15,13 @@ public class Main implements HumanInterface {
         Motor m = new Motor(this);
 
         System.out.println("** Ajout des règles **");
-        m.AddRule("R1 : IF (Ordre=3(Quel est l'ordre ?)) THEN Triangle");
+        ArrayList<String> rulesList;
+        CSVReader csvReader = new CSVReader();
+        rulesList = csvReader.getRulesList();
+
+        rulesList.forEach(m::AddRule);
+
+        /*m.AddRule("R1 : IF (Ordre=3(Quel est l'ordre ?)) THEN Triangle");
         m.AddRule("R2 : IF (Triangle AND Angle Droit(La figure a-t-elle au moins un angle droit ?)) THEN Triangle Rectangle");
         m.AddRule("R3 : IF (Triangle AND Cotes Egaux=2 (Combien la figure a-t-elle de côtés égaux ?)) THEN Triangle Isocèle");
         m.AddRule("R4 : IF (Triangle Rectangle AND Triangle Isocèle) THEN Triangle Rectangle Isocèle");
@@ -30,7 +37,7 @@ public class Main implements HumanInterface {
         m.AddRule("R14 : IF (Ordre=8 (Quel est l'ordre ?)) THEN Octogone");
         m.AddRule("R15 : IF (Ordre=10 (Quel est l'ordre ?)) THEN Décagone");
         m.AddRule("R16 : IF (Ordre=12 (Quel est l'ordre ?)) THEN Dodécagone");
-        m.AddRule("R17 : IF (Ordre=20 (Quel est l'ordre ?)) THEN Icosagone");
+        m.AddRule("R17 : IF (Ordre=20 (Quel est l'ordre ?)) THEN Icosagone");*/
 
         while (true){
             System.out.println("\n** Résolution **");
@@ -60,15 +67,23 @@ public class Main implements HumanInterface {
     }
 
     @Override
+    public String AskStringValue(String question) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(question);
+        String str = sc.nextLine();
+        try {
+            return str;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return e.toString();
+        }
+    }
+
+    @Override
     public void PrintFacts(ArrayList<IFact> facts) {
         StringBuilder res = new StringBuilder("Solution(s) trouvée(s) : \n");
-        Collections.sort(facts, new Comparator<IFact>() {
-            @Override
-            public int compare(IFact o1, IFact o2) {
-                if (o1.Level() > o2.Level())return 1;
-                else  return -1;
-            }
-        });
+        facts.sort(Comparator.comparingInt(IFact::Level));
         for (IFact f:facts) {
             res.append(f.toString()).append("\n");
         }
