@@ -12,7 +12,15 @@ public class CSVReader {
         this.rulesList = new ArrayList<>();
     }
 
+    // 0 : generation - 1,2,...
+    // 1 : evolution - 0,1,2 ...
+    // 2 : type1 - grass, fire, ...
+    // 3 : type2 - '', grass, fire, ...
+    // 4 : isTall - True/False
+    // 5 : is_legendary - True/False
+    // 6 : classification - seed
     private ArrayList<String> read(String filePath) {
+        ArrayList<String> rules = new ArrayList<>();
         String line;
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String headers[] = br.readLine().split(",");
@@ -27,19 +35,19 @@ public class CSVReader {
                 String rule = ruleName + " : IF ("
                         + (!premises.equals("") ? premises + " AND " : premises)
                         + factName + "=" + ruleValue
-                        + "(Question ?)) THEN " + conclusion;
-                this.rulesList.add(rule);
+                        + "(Question ? "+filePath+")) THEN " + conclusion;
+                rules.add(rule);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return rulesList;
+        return rules;
     }
 
     public ArrayList<String> getRulesList() {
         String csvFile = "csv/pokemon_rule_lvl_";
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 7; i++) {
             String file = csvFile + i + ".csv";
             this.rulesList.addAll(read(file));
         }

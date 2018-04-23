@@ -69,7 +69,9 @@ public class Motor {
         usableRules.setRules(new ArrayList<>(rulesBase.getRules()));
         Pair<Rule, Integer> t;
         factsBase.clear();
+
         while ((t = FindUsableRule(usableRules)) != null){
+            System.out.println(t.getKey());
             IFact newFact = t.getKey().getConclusion();
             newFact.SetLevel(t.getValue() + 1);
             factsBase.AddFact(newFact);

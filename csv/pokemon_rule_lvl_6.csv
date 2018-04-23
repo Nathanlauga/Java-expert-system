@@ -1,5 +1,5 @@
 rule,premise,classfication,conclusion
-R2122,,Seed,Bulbasaur
+R2122,generation-1/evolution-1/type1-grass/type2-poison/isTall-False/is_legendary-0,Seed,Bulbasaur
 R2123,,Seed,Ivysaur
 R2124,,Seed,Venusaur
 R2125,,Lizard,Charmander
