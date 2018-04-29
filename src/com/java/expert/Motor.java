@@ -83,9 +83,15 @@ public class Motor {
                 if (r.getConclusion().toString().contains(conclusion)) tmpBase.getRules().add(r);
                 else if (r.getPremises().get(0).toString().contains(conclusion))tmpBase.getRules().add(r);
             }
-//            generation-6/evolution-1/type1-flying/type2-dragon/is_tall-Non/is_legendary-Non,Sound Wave,Noibat
+
             usableRules = tmpBase;
             usableRules.Remove(t.getKey());
+
+            if (newFact.Level()==6){
+                for(Rule r : usableRules.getRules()){
+                    System.out.println(r.getPremises().get(1).Value());
+                }
+            }
 
             if(usableRules.getRules().size()+newFact.Level() == 7 && newFact.Level() != 7){
                 newFact = usableRules.getRules().get(usableRules.getRules().size()-1).getConclusion();
