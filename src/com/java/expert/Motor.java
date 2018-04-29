@@ -71,12 +71,28 @@ public class Motor {
         factsBase.clear();
 
         while ((t = FindUsableRule(usableRules)) != null){
-            System.out.println(t.getKey());
             IFact newFact = t.getKey().getConclusion();
             newFact.SetLevel(t.getValue() + 1);
             factsBase.AddFact(newFact);
 
+            String conclusion = t.getKey().getConclusion().Name();
+
+            //TODO  : garder uniquement les règles qui nous intéresse
+            RulesBase tmpBase = new RulesBase();
+            for (Rule r : usableRules.getRules()){
+                if (r.getConclusion().toString().contains(conclusion)) tmpBase.getRules().add(r);
+                else if (r.getPremises().get(0).toString().contains(conclusion))tmpBase.getRules().add(r);
+            }
+//            generation-6/evolution-1/type1-flying/type2-dragon/is_tall-Non/is_legendary-Non,Sound Wave,Noibat
+            usableRules = tmpBase;
             usableRules.Remove(t.getKey());
+
+            if(usableRules.getRules().size()+newFact.Level() == 7 && newFact.Level() != 7){
+                newFact = usableRules.getRules().get(usableRules.getRules().size()-1).getConclusion();
+                newFact.SetLevel(t.getValue() + 2);
+                factsBase.AddFact(newFact);
+                break;
+            }
         }
         humanInterface.PrintFacts(factsBase.getFacts());
     }

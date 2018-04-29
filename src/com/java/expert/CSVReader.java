@@ -19,7 +19,8 @@ public class CSVReader {
     // 4 : isTall - True/False
     // 5 : is_legendary - True/False
     // 6 : classification - seed
-    private ArrayList<String> read(String filePath) {
+    private ArrayList<String> read(String filePath, String question) {
+
         ArrayList<String> rules = new ArrayList<>();
         String line;
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -35,7 +36,7 @@ public class CSVReader {
                 String rule = ruleName + " : IF ("
                         + (!premises.equals("") ? premises + " AND " : premises)
                         + factName + "=" + ruleValue
-                        + "(Question ? "+filePath+")) THEN " + conclusion;
+                        + "( "+question+" )) THEN " + conclusion;
                 rules.add(rule);
             }
         } catch (IOException e) {
@@ -46,10 +47,19 @@ public class CSVReader {
 
     public ArrayList<String> getRulesList() {
         String csvFile = "csv/pokemon_rule_lvl_";
+        String[] questions = {
+                "Quel est la génération du pokémon ? entre 1 et 7 inclu",
+                "Quel est son stade d'évolution ? 1, 2 ou 3",
+                "Quel est son premier type ?",
+                "Quel est son second type ? Si pas de type répondre Aucun",
+                "Est-il plus grand qu'un mètre ? Oui ou Non",
+                "Est-il légendaire ? Oui ou Non",
+                "Quelle est sa classification ?"
+        };
 
         for (int i = 0; i < 7; i++) {
             String file = csvFile + i + ".csv";
-            this.rulesList.addAll(read(file));
+            this.rulesList.addAll(read(file, questions[i]));
         }
         return rulesList;
     }

@@ -10,7 +10,7 @@ public class FactFactory {
         IFact newFact;
         if (f.getClass().equals(StringFact.class)) {
           String value = m.AskStringValue(f.Question());
-          newFact = new StringFact(f.Name(), value, null, 0);
+          newFact = new StringFact(f.Name().toLowerCase(), value.toLowerCase(), null, 0);
         } else if (f.getClass().equals(IntFact.class)){
             int value = m.AskIntValue(f.Question());
             newFact = new IntFact(f.Name(), value, null, 0);
