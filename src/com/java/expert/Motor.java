@@ -69,38 +69,70 @@ public class Motor {
         usableRules.setRules(new ArrayList<>(rulesBase.getRules()));
         Pair<Rule, Integer> t;
         factsBase.clear();
+        int maxLevel = 7;
 
         while ((t = FindUsableRule(usableRules)) != null){
-            IFact newFact = t.getKey().getConclusion();
-            newFact.SetLevel(t.getValue() + 1);
+            IFact newFact;
+            // CHANGE THE CURRENT LEVEL VALUE
+            int currentLevel = t.getValue() + 1;
+
+            // ADD THE NEW FACT TO THE FACT BASE
+            newFact = t.getKey().getConclusion();
+            newFact.SetLevel(currentLevel);
             factsBase.AddFact(newFact);
 
             String conclusion = t.getKey().getConclusion().Name();
 
-            //TODO  : garder uniquement les règles qui nous intéresse
-            RulesBase tmpBase = new RulesBase();
-            for (Rule r : usableRules.getRules()){
-                if (r.getConclusion().toString().contains(conclusion)) tmpBase.getRules().add(r);
-                else if (r.getPremises().get(0).toString().contains(conclusion))tmpBase.getRules().add(r);
-            }
-
-            usableRules = tmpBase;
+            // DROP USELESS RULES AND THE RULE THAT WAS ADD INTO THE FACT BASE
+            usableRules = dropUselessRules(usableRules, conclusion);
             usableRules.Remove(t.getKey());
 
-            if (newFact.Level()==6){
-                for(Rule r : usableRules.getRules()){
-                    System.out.println(r.getPremises().get(1).Value());
+            // CHECK IF THE NEXT QUESTIONS ARE USELESS TO ASK
+            Boolean questionIsUseless;
+            for (int i=currentLevel ; i<=maxLevel ; i++) {
+                if (usableRules.getRules().size() > 1) {
+                    questionIsUseless = !usableRules.getRules().get(0).getPremises().get(1).Name().equals(usableRules.getRules().get(1).getPremises().get(1).Name());
+
+                    // IF THE NEXT QUESTION IS USELESS THEN ADD IT TO THE FACT BASE
+                    // AND DROP ALL USELESS RULES
+                    if (t.getValue() != 0 && questionIsUseless) {
+                        currentLevel+=1;
+                        newFact = usableRules.getRules().get(0).getConclusion();
+                        newFact.SetLevel(currentLevel);
+                        factsBase.AddFact(newFact);
+                        usableRules = dropUselessRules(usableRules, usableRules.getRules().get(0).getConclusion().Name());
+                        usableRules.Remove(usableRules.getRules().get(0));
+                    }
+                    // ELSE BREAK THE FOR LOOP
+                    else break;
                 }
             }
-
-            if(usableRules.getRules().size()+newFact.Level() == 7 && newFact.Level() != 7){
+            // IF WE GET ONLY ONE RULE THEN ADD IT AND BREAK THE WHILE LOOP --> IT'S THE ANSWER
+            if(usableRules.getRules().size() == 1){
                 newFact = usableRules.getRules().get(usableRules.getRules().size()-1).getConclusion();
-                newFact.SetLevel(t.getValue() + 2);
+                newFact.SetLevel(currentLevel + 1);
                 factsBase.AddFact(newFact);
                 break;
             }
+
+            // PRINT ALL POSSIBILITES FOR CLASSFICATIONS
+            if (newFact.Level()==maxLevel-1){
+                System.out.println("Les classifications possibles sont : ");
+                for(Rule r : usableRules.getRules()){
+                    System.out.println("- "+r.getPremises().get(1).Value());
+                }
+            }
         }
         humanInterface.PrintFacts(factsBase.getFacts());
+    }
+
+    private RulesBase dropUselessRules(RulesBase usableRules, String conclusion){
+        RulesBase tmpBase = new RulesBase();
+        for (Rule r : usableRules.getRules()){
+            if (r.getConclusion().toString().contains(conclusion)) tmpBase.getRules().add(r);
+            else if (r.getPremises().get(0).toString().contains(conclusion))tmpBase.getRules().add(r);
+        }
+        return tmpBase;
     }
 
     public void AddRule(String ruleStr){
@@ -113,6 +145,7 @@ public class Motor {
             if (premisesAndConclusion.size() == 2){
                 String[] premises = premisesAndConclusion.get(0).trim().split("AND");
                 ArrayList<IFact> premiseList = new ArrayList<>();
+
 
                 for (String prem: premises) {
                     IFact premise = FactFactory.Fact(prem);
