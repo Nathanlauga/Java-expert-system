@@ -67,58 +67,64 @@ public class Motor {
     public void Solve(){
         RulesBase usableRules = new RulesBase();
         usableRules.setRules(new ArrayList<>(rulesBase.getRules()));
-        Pair<Rule, Integer> t;
+        Pair<Rule, Integer> ruleWithDepthLevel;
         factsBase.clear();
         int maxLevel = 7;
+        int currentLevel = 0;
 
-        while ((t = FindUsableRule(usableRules)) != null){
+        while ((ruleWithDepthLevel = FindUsableRule(usableRules)) != null){
             IFact newFact;
+            ArrayList<Rule> usableRulesList;
             // CHANGE THE CURRENT LEVEL VALUE
-            int currentLevel = t.getValue() + 1;
+            currentLevel = ruleWithDepthLevel.getValue() + 1;
 
             // ADD THE NEW FACT TO THE FACT BASE
-            newFact = t.getKey().getConclusion();
+            newFact = ruleWithDepthLevel.getKey().getConclusion();
             newFact.SetLevel(currentLevel);
             factsBase.AddFact(newFact);
 
-            String conclusion = t.getKey().getConclusion().Name();
+            String conclusion = ruleWithDepthLevel.getKey().getConclusion().Name();
 
             // DROP USELESS RULES AND THE RULE THAT WAS ADD INTO THE FACT BASE
             usableRules = dropUselessRules(usableRules, conclusion);
-            usableRules.Remove(t.getKey());
+            usableRules.Remove(ruleWithDepthLevel.getKey());
+            usableRulesList = usableRules.getRules();
 
             // CHECK IF THE NEXT QUESTIONS ARE USELESS TO ASK
             Boolean questionIsUseless;
             for (int i=currentLevel ; i<=maxLevel ; i++) {
-                if (usableRules.getRules().size() > 1) {
-                    questionIsUseless = !usableRules.getRules().get(0).getPremises().get(1).Name().equals(usableRules.getRules().get(1).getPremises().get(1).Name());
+                if (usableRulesList.size() > 1) {
+                    String premiseOneName = usableRulesList.get(0).getPremises().get(1).Name();
+                    String premiseTwoName = usableRulesList.get(1).getPremises().get(1).Name();
+                    questionIsUseless = !premiseOneName.equals(premiseTwoName);
 
+                    // IF WE GET ONLY ONE POSSIBLE WAY THEN ADD IT DROP ALL THE OTHER RULES --> IT'S THE ANSWER
+                    if (currentLevel+usableRulesList.size() == maxLevel && currentLevel != maxLevel){
+                        currentLevel+=1;
+                        maxLevel = currentLevel;
+                        newFact = usableRulesList.get(usableRulesList.size()-1).getConclusion();
+                    }
                     // IF THE NEXT QUESTION IS USELESS THEN ADD IT TO THE FACT BASE
                     // AND DROP ALL USELESS RULES
-                    if (t.getValue() != 0 && questionIsUseless) {
+                    else if (ruleWithDepthLevel.getValue() != 0 && questionIsUseless) {
                         currentLevel+=1;
-                        newFact = usableRules.getRules().get(0).getConclusion();
-                        newFact.SetLevel(currentLevel);
-                        factsBase.AddFact(newFact);
-                        usableRules = dropUselessRules(usableRules, usableRules.getRules().get(0).getConclusion().Name());
-                        usableRules.Remove(usableRules.getRules().get(0));
+                        newFact = usableRulesList.get(0).getConclusion();
                     }
                     // ELSE BREAK THE FOR LOOP
                     else break;
+
+                    newFact.SetLevel(currentLevel);
+                    factsBase.AddFact(newFact);
+                    usableRules = dropUselessRules(usableRules, newFact.Name());
+                    usableRules.Remove(usableRulesList.get(0));
+                    usableRulesList = usableRules.getRules();
                 }
-            }
-            // IF WE GET ONLY ONE RULE THEN ADD IT AND BREAK THE WHILE LOOP --> IT'S THE ANSWER
-            if(usableRules.getRules().size() == 1){
-                newFact = usableRules.getRules().get(usableRules.getRules().size()-1).getConclusion();
-                newFact.SetLevel(currentLevel + 1);
-                factsBase.AddFact(newFact);
-                break;
             }
 
             // PRINT ALL POSSIBILITES FOR CLASSFICATIONS
             if (newFact.Level()==maxLevel-1){
                 System.out.println("Les classifications possibles sont : ");
-                for(Rule r : usableRules.getRules()){
+                for(Rule r : usableRulesList){
                     System.out.println("- "+r.getPremises().get(1).Value());
                 }
             }
